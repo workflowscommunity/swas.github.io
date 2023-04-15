@@ -1,0 +1,44 @@
+- name: Rafael<br />Ferreira da Silva
+  photo: ferreiradasilva.jpg
+  link: https://rafaelsilva.com
+  category: leadership
+  institution: 
+    name: Oak Ridge National Laboratory
+    image: ornl.png
+    link: https://www.ornl.gov/
+
+- name: Kyle<br />Chard
+  photo: chard.jpg
+  link: https://kylechard.com/
+  category: leadership
+  institution: 
+    name: University of Chicago
+    image: uchicago.png
+    link: https://www.uchicago.edu/
+
+- name: Lavanya<br />Ramakrishnan
+  photo: ramakrishnan.jpg
+  link: https://crd.lbl.gov/divisions/scidata/about-scidata/scidata-staff/office-of-the-director/lavanya-ramakrishnan/
+  category: leadership
+  institution:
+    name: Lawrence Berkeley National Laboratory
+    image: lbnl.png
+    link: https://www.lbl.gov/
+
+- name: Shantenu<br />Jha
+  photo: jha.jpg
+  link: https://www.bnl.gov/staff/shantenu
+  category: leadership
+  institution:
+    name: Brookhaven National Laboratory
+    image: bnl.png
+    link: https://www.bnl.gov/
+
+- name: Daniel<br />Laney
+  photo: laney.png
+  link: https://people.llnl.gov/laney1
+  category: leadership
+  institution:
+    name: Lawrence Livermore National Laboratory
+    image: llnl.png
+    link: https://www.llnl.gov/

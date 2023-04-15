@@ -1,0 +1,84 @@
+---
+image: "https://workflows.community/images/wci-default-card.png"
+---
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body class="is-preload">
+    {% include header.html %}
+
+    <div class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+            <a name="home"></a>
+            <div class="row no-gutters slider-text align-items-center justify-content-center"
+                data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <a href="#">
+                            <img src="/images/swas-logo-white.png" style="width: 90%" alt="" />
+                        </a>
+                    </p>
+                    <br />
+                    <h1 class="" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                        style="font-size: 1.5em">
+                        The Center for Sustaining Workflows and Application Services (SWAS) brings together academia,
+                        national labs, and industry to create a sustainable software ecosystem supporting the myriad
+                        software and services used in workflows as well as the workflow orchestration software itself.
+                        SWAS will grow, support, and sustain the ecosystem spanning the full range of <strong>analysis,
+                            simulation, experiment, and machine learning workflows</strong>. SWAS will ensure that
+                        researchers can rely on robust, portable, scalable, secure, and interoperable workflows software
+                        and application services.
+                    </h1>
+                    <br />
+                    <div class="ftco-footer-widget mb-4">
+                        <ul class="ftco-footer-social list-unstyled">
+                            <!-- <li>
+                                <a href="https://www.youtube.com/channel/UCqCnXqWqKe9vF6cqKOj1CYw" target="_blank"
+                                    class="fa-stack fa-2x" style="font-size: 1.5em">
+                                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                                    <i class="fab fa-youtube fa-stack-1x"></i>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="mailto:contact@swas.center" class="fa-stack fa-2x"
+                                    style="font-size: 1.5em">
+                                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                                    <i class="fa fa-envelope fa-stack-1x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/SWAS_center" target="_blank" class="fa-stack fa-2x"
+                                    style="font-size: 1.5em">
+                                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://join.slack.com/t/workflowscommunity/shared_invite/zt-1s8u3ocgm-gNdsgRJgy6O2GNSFUf9eDQ"
+                                    target="_blank" class="fa-stack fa-2x" style="font-size: 1.5em">
+                                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                                    <i class="fab fa-slack fa-stack-1x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

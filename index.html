@@ -1,0 +1,142 @@
+---
+layout: default
+permalink: /
+---
+
+<a name="overview"></a>
+<section class="ftco-section ftco-animate">
+    <div class="container-fluid" data-scrollax-parent="true">
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <h2 class="mb-4">Overview</h2>
+                <p>
+                    The objective of the SWAS center is to identify critical software and develop a plan for sustaining
+                    this software that is tailored to the needs of this unique software ecosystem. SWAS will advance and
+                    sustain workflows and application services development, with entrusted validation and verification
+                    capabilities (via a community-endorsed sustainability model), so that these systems and application
+                    services can provide the functionality and robustness required by DOE science users.
+                </p>
+                <h3>Target Software</h3>
+                <p>
+                    SWAS welcomes engagements with software teams and communities related to workflows and application
+                    services. We emphasize that "workflows" in this context represents the broad set of software and
+                    services users need to configure, orchestrate, and operate modern analysis, modeling, and simulation
+                    campaigns. Specifically, we seek engagement with the following communities:
+                </p>
+                <div class="row text-center" style="margin: auto;">
+                    <div class="col-md-4 mb-3" style="font-size: 1.2em;">
+                        <strong style="color: #5C7DFE">Workflow Systems</strong>
+                    </div>
+                    <div class="col-md-4" style="font-size: 1.2em;">
+                        <strong style="color: #F63555">Data Management Frameworks</strong>
+                    </div>
+                    <div class="col-md-4" style="font-size: 1.2em;">
+                        <strong style="color: #FFAD34">Visualization Frameworks</strong>
+                    </div>
+                    <div class="col-md-4" style="line-height: 1.1em; font-size: 1.2em;">
+                        <strong style="color: #00AEAD">AI/ML Tools</strong><br /><span
+                            style="font-size: 0.7em; font-style: italic;">(used in
+                            modern workflows)</span>
+                    </div>
+                    <div class="col-md-4" style="font-size: 1.2em;">
+                        <strong style="color: #C43BF7">Application services</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a name="stakeholders"></a>
+<section class="ftco-section ftco-animate" style="background-color: #eee;">
+    <div class="container-fluid" data-scrollax-parent="true">
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <h2 class="mb-4">Stakeholder Communities</h2>
+                <p>
+                    The primary stakeholders of the SWAS center are workflow researchers and developers, science and
+                    engineering users, and computing centers and facilities operators:
+                </p>
+                <div class="row text-center" style="margin: auto;">
+                    <div class="col-md-4 mb-3">
+                        <strong style="font-size: 1.2em; color: #5C7DFE">Workflows and application services</strong>
+                        that focus on general and specific domains, non-expert and expert users, and offer
+                        configuration-based interfaces, graphical interfaces, domain-specific languages, or programming
+                        language libraries or APIs.
+                    </div>
+                    <div class="col-md-4">
+                        <strong style="font-size: 1.2em; color: #F63555">Science and engineering communities</strong>
+                        to understand their current, imminent, and future workflow needs and challenges, and provide
+                        guidance for application, infrastructure, and software development. These communities are the
+                        groups most affected by the uncertain workflows landscape, and face the crucial need for robust
+                        and sustainable workflows software.
+                    </div>
+                    <div class="col-md-4">
+                        <strong style="font-size: 1.2em; color: #00AEAD">Computing centers and facilities
+                            operators</strong>
+                        (both public and private) to support the use and deployment of workflow and application
+                        services, and provide training to foster proper adoption of workflow tools and therefore
+                        offering pathways for sustainability.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a name="getinvolved"></a>
+<section class="ftco-section ftco-counter" id="section-counter" style="padding: 4em 0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <h2>Get Involved</h2>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate p-3" style="color: #fff">
+                <p>The SWAS seedling effort is planning to organize an in-person workshop during <strong>Summer 2023</strong>.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate p-3" style="color: #fff">
+                <p>Members of the SWAS team will be visiting several institutions and engaging in conversations with
+                    software teams and communities. Please, reach out to <a
+                        href="mailto:contact@swas.center" style="color: #fff; font-weight: bold;">contact@swas.center</a> for more information.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a name="team"></a>
+<section class="ftco-section" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center heading-section ftco-animate">
+                <!-- <span class="subheading">Since 2023</span> -->
+                <h2 class="mb-4">SWAS Leadership Team</h2>
+                <br />
+                <div class="row">
+                    {% assign leadership = site.data.organization | where: "category","leadership" %}
+                    {% for member in leadership %}
+                    <div class="col-md-2 mb-5 ftco-animate">
+                        <div class="block-10">
+                            <div class="person-info mb-0" style="margin-bottom: 0; line-height: 1.2em; height: 50px;">
+                                <span class="name" style="font-size: 1em">{{ member.name }}</span>
+                                <!-- <span class="position">{{ member.role }}</span> -->
+                            </div>
+                            <a href="{{ member.link }}" target="_blank">
+                                <img src="/images/about/{{ member.photo }}" alt="{{ member.name }}"
+                                    class="img-fluid mb-3" style="width: 100%">
+                            </a>
+                            <a href="{{ member.institution.link }}" target="_blank">
+                                <img src="/images/institutions/{{ member.institution.image }}"
+                                    alt="{{ member.institution.name }}" style="max-height: 2em" />
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

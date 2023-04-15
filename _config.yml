@@ -1,0 +1,43 @@
+# Site settings
+title: Center for Sustaining Workflows and Application Services
+subtitle: Developing a sustainable software ecosystem supporting the myriad software and services used in workflows as well as the workflow orchestration software itself
+
+markdown: kramdown
+enable-mathjax: yes
+
+permalink: /blog/:title/
+
+# Pagination
+paginate: 8
+paginate_path: /blog/page:num/
+
+# Collections
+
+# SEO
+author:
+  name: Center for Sustaining Workflows and Application Services
+  twitter: WorkflowsCI
+  image: https://swas.center/favicon.ico
+twitter:
+  username: WorkflowsCI
+  card: summary_large_image
+social:
+  name: Center for Sustaining Workflows and Application Services
+  links: 
+    - https://twitter.com/WorkflowsCI
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://workflows.community/images/wci-default-card.png
+
+plugins:
+  - jekyll-sitemap    # Adds sitemap to the website at /sitemap.xml
+  - jekyll-feed       # Adds feed to the website at /feed.xml
+  - jekyll-paginate   # Used for sorting posts by page numbers.
+  - jekyll-seo-tag    # Adds all the important SEO meta tags by default.
+
+exclude:
+  - .jekyll-cache
+  - README.md
+  - LICENSE
